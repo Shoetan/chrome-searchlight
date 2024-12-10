@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "Dark Extension",
+  "version": "1.0",
+  "description": "Adds an opaque overlay to the current browser view",
+  "permissions": [
+    "activeTab",
+    "scripting"
+  ],
+  "action": {
+    "default_icon": {
+      "16": "images/hi.png",
+      "48": "images/hi.png",
+      "128": "images/hi.png"
+    },
+    "default_title": "Toggle screen overlay"
+  },
+  "background": {
+    "service_worker": "scripts/background.js"
+  },
+  "icons": {
+    "16": "images/hi.png",
+    "48": "images/hi.png",
+    "128": "images/hi.png"
+  }
+}
